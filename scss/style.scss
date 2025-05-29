@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // VARIABLES
 $primary-color: #fde6ee;
 $title-color: #70a1f1;
@@ -215,3 +216,128 @@ footer {
     gap: 1rem;
   }
 }
+=======
+// VARIABLES
+$primary-color: #fde6ee;
+$title-color: #70a1f1;
+$dark-color: #212529;
+$text-light: #fff;
+$font-main: 'Arial', sans-serif;
+$radius: 10px;
+
+// MIXIN
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// PLACEHOLDER
+%card-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: $radius;
+  transition: transform 0.3s ease;
+}
+
+// ESTILOS
+body {
+  font-family: $font-main;
+  background-color: $primary-color;
+  color: $dark-color;
+
+  h1, h2, h3 {
+    color: $title-color;
+  }
+
+  header {
+    nav {
+      background-color: $title-color;
+
+      .navbar-brand {
+        color: $text-light;
+      }
+
+      .nav-link {
+        color: $text-light;
+
+        &:hover {
+          color: $dark-color;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $dark-color;
+    color: $text-light;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+.card {
+  @extend %card-shadow;
+  padding: 1rem;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+$mobile-breakpoint: 768px;
+
+@media (max-width: $mobile-breakpoint) {
+  body {
+    font-size: 90%;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    padding: 0.8rem;
+  }
+}
+// Variables
+$highlight-color: #cceaff;
+$card-bg: #ffe6f0;
+
+// Mixin de animación
+@mixin fade-in($time: 1s) {
+  animation: fadeIn $time ease-in-out;
+}
+
+// Keyframes
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Aplicar a títulos
+h2 {
+  color: $highlight-color;
+  @include fade-in(1s);
+  transition: all 0.5s ease;
+}
+
+// Aplicar a cards
+.card {
+  background-color: $card-bg;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    @include fade-in(0.5s);
+  }
+}
+
+>>>>>>> 0a601ade90a34266aa7a8300aa9b824b51ee37dd
