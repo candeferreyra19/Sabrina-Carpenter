@@ -6,20 +6,20 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: #fde6ee;
+  background-color: #ddbfd7;
   color: #212529;
 }
 body h1, body h2, body h3 {
-  color: #70a1f1;
+  color: #000000;
 }
 body header nav {
-  background-color: #70a1f1;
+  background-color: #000000;
 }
 body header nav .navbar-brand {
-  color: #fff;
+  color: #ddbfd7;
 }
 body header nav .nav-link {
-  color: #fff;
+  color: #ddbfd7;
 }
 body header nav .nav-link:hover {
   color: #212529;
@@ -74,6 +74,28 @@ h2 {
 .card:hover {
   transform: scale(1.02);
   animation: fadeIn 0.5s ease-in-out;
+}
+
+.btn-custom {
+  background-color: #70a1f1; /* azul bonito */
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-custom:hover {
+  background-color: #4a7edc;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-custom {
+  margin-bottom: 1rem; /* espacio abajo */
+  /* o margin-top: 1rem; */
 }
 
 /*# sourceMappingURL=style.css.map */

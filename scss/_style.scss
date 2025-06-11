@@ -1,0 +1,19 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'navbar';
+@import 'header';
+@import 'cards';
+@import 'footer';
+@import 'responsive';
+
+// Estilos generales
+body {
+  font-family: $font-main;
+  background-color: $primary-color;
+  color: $dark-color;
+
+  h2, h3 {
+    color: $title-color;
+  }
+}

@@ -12,27 +12,27 @@
 
 <body>
   <header>
-    <!-- Navbar de Bootstrap -->
+    <!-- Navbar de Bootstrap sin collapse -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="../media/logo.jpg" alt="Sabrina Carpenter" width="50" class="d-inline-block align-text-top">
-          Sabrina Carpenter
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="./paginas/tour.html">Tour</a></li>
-            <li class="nav-item"><a class="nav-link" href="./páginas/musica.html">Música</a></li>
-            <li class="nav-item"><a class="nav-link" href="./páginas/galeria.html">Galería</a></li>
-            <li class="nav-item"><a class="nav-link" href="./páginas/contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="media/logo.jpg" alt="Sabrina Carpenter" width="50" class="d-inline-block align-text-top">
+      Sabrina Carpenter
+    </a>
+    <div class="navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="paginas/tour.html">Tour</a></li>
+        <li class="nav-item"><a class="nav-link" href="paginas/musica.html">Música</a></li>
+        <li class="nav-item"><a class="nav-link" href="paginas/galeria.html">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   </header>
 
   <main class="container my-5">
@@ -42,14 +42,28 @@
     </section>
 
     <section class="mb-5">
-      <h2 class="text-center mb-4">Últimas Noticias</h2>
+  <h2 class="text-center mb-4">Últimas Noticias</h2>
+  <div class="row g-4">
+  <div class="row justify-content-center mb-4">
+    <div class="col-md-8">
+      <div class="card h-100 text-center">
+        <img src="media/mans-best-friend.jpg" class="card-img-top" alt="Portada del álbum Man's Best Friend">
+        <div class="card-body">
+          <h5 class="card-title">Nuevo Álbum: "Man's Best Friend"</h5>
+          <p class="card-text"><small class="text-muted">Estreno: 29 de agosto de 2025</small></p>
+          <p class="card-text">Sabrina Carpenter anunció su nuevo álbum titulado <strong>"Man's Best Friend"</strong>, que será estrenado el 29 de agosto. ¡Prepárate para nuevas canciones increíbles!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section class="mb-5">
       <div class="row g-4">
         <div class="col-md-6">
-          <!-- Card de Bootstrap -->
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Nuevo Álbum en Camino</h5>
-              <p class="card-text">Sabrina Carpenter ha anunciado que está trabajando en su próximo álbum, el cual se lanzará este año. ¡Estén atentos para más detalles!</p>
+              <h5 class="card-title">Colaboración Especial</h5>
+              <p class="card-text">Sabrina Carpenter se une a un reconocido artista internacional para lanzar un nuevo sencillo que promete ser un éxito global.</p>
             </div>
           </div>
         </div>
@@ -68,7 +82,11 @@
     <section class="text-center">
       <h2>Últimos Lanzamientos</h2>
       <div class="ratio ratio-16x9 mt-3">
-        <iframe src="https://www.youtube.com/embed/VJPhmau5Vgk?si=UMQz4TswierVGSfo" title="YouTube video" allowfullscreen></iframe>
+        <iframe 
+          src="https://youtu.be/GTLdJ-CM7TQ?si=9aiR4-zmiq43g09g" 
+          title="Video musical de Sabrina Carpenter"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
     </section>
   </main>
@@ -81,4 +99,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
